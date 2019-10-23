@@ -24,6 +24,12 @@ pipeline {
          //}
     }
 }
+     stage('Test') {
+      steps {
+        sh 'npm test -- --coverage'
+      }
+    }
+    
         
     stage('Install dependencies') {
       steps {
@@ -31,9 +37,9 @@ pipeline {
       }
     }
      
-     stage('start') {
+     stage('build') {
       steps {
-         sh 'npm start'
+         sh 'npm run build'
       }
     }  
   }
