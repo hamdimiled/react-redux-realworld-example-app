@@ -47,5 +47,5 @@ pipeline {
             archiveArtifacts artifacts: '**/*.min.*', onlyIfSuccessful: true
         }
     }
-  }
+  
 }
