@@ -43,12 +43,7 @@ pipeline {
       }
     }  
     
-    
-     post {
-        always {
-            archiveArtifacts artifacts: '**/*.min.*', onlyIfSuccessful: true
-        }
-    }
+   
     
     
   }
