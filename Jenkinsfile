@@ -24,11 +24,11 @@ pipeline {
          //}
     }
 }
-     stage('Test') {
+     /* stage('Test') {
       steps {
         sh 'npm test -- --coverage'
       }
-    }
+    } */
     
         
     stage('Install dependencies') {
